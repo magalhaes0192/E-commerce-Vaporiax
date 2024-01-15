@@ -7,6 +7,9 @@ use App\Http\Controllers\PerfilController;
 use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
+use Filament\Http\Controllers\LoginController;
+
+
 
 
 /*
@@ -60,3 +63,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::filament('filament');
